@@ -1,4 +1,8 @@
 
+/* GRID tips and tutorials to up your CSS layout skills */
+/* CSS Layout */
+
+
 *{
     margin:0;
     padding:0;
@@ -32,23 +36,31 @@
 
 .sub-section-heading{
     position: relative;
-    grid-row-start: 1;
+    grid-row: 1;
     background-color:hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
-    padding:2.5em;
-    bottom:.5em;
+    bottom:.3em;
     z-index: 1;
+    padding-top:4em;
+    padding-bottom:10em;
+
+    
 
 }
 
 .sub-section-heading > p{
-    padding-top:1rem;
+    padding-top:1.5em;
     line-height: 1.6;
+    /* margin-right:5%; */
     z-index: 1;
+   font-size:15.5px;
+    text-align:center;
+    padding-left:1em;
+    padding-right:1em;
 }
 
 .sub-section-heading > h1 {
-    margin-left:.5em;
+    margin-right:.5em;
     z-index: 1;
     
 }
@@ -60,11 +72,33 @@
 /* TODO: Place design under text */
 .left-side-mobile-design{
     position:absolute;
-    right:55%;
-    bottom:45%;
+    right:60%;
+    bottom:65%;
 
 }
 
 
+.veiwplans--btn{
+        
+    position: relative;
+    background-color:hsl(256, 26%, 20%);
+    border: solid 2px hsl(0, 0%, 98%);
+    padding:4%;
+    top:1.5em;
+    right:.4em;
+    width:53%;
+    color:hsl(0, 0%, 98%);
+    font-size:16.5px;
+    
+    
+
+}
+
+.right-side-mobile-design{
+    position:absolute;
+    left:65%;
+    top:65%;
+    /* bottom:20%; */
+}
 
 
