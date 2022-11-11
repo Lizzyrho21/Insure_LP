@@ -6,6 +6,7 @@
 *{
     margin:0;
     padding:0;
+    font-size:1.5rem;
 }
 
 
@@ -36,44 +37,77 @@
 
 .sub-section-heading{
     position: relative;
-    grid-row: 1;
+    display:flex;
+    flex-direction: column;
+    align-items: center; 
+    min-width:100%;
     background-color:hsl(256, 26%, 20%);
     color: hsl(0, 0%, 98%);
     bottom:.3em;
     z-index: 1;
-    padding-top:4em;
+    padding-top:2em;
     padding-bottom:10em;
+    
+
+
 
     
 
-}
 
-.sub-section-heading > p{
-    padding-top:1.5em;
-    line-height: 1.6;
-    /* margin-right:5%; */
-    z-index: 1;
-   font-size:15.5px;
-    text-align:center;
-    padding-left:1em;
-    padding-right:1em;
 }
 
 .sub-section-heading > h1 {
+    position: relative;
     margin-right:.5em;
     z-index: 1;
+    bottom:8em;
+    
+    order:1;
+    flex:2;
     
 }
 
+.sub-section-heading > p{
+    /* order:1; */
+    display:relative;
+    /* padding-top:2em; */
+    /* margin-bottom:40em; */
+    
+    line-height: 1.6;
+    /* margin-right:5%; */
+    /* z-index: 1; */
+    font-size:16.5px;
+    /* text-align:center; */
+    padding-left:1em;
+    padding-right:1em;
+    flex:1;
+    /* order:1; */
+    /* align-self: center; */
+    
+
+}
+
+
+
 .main-img{
-    height:100%;
+    /* grid-column: 1 span 5; */
+    height: auto;
+    min-width:100%;
+    /* min-height:100%; */
 }
 
 /* TODO: Place design under text */
 .left-side-mobile-design{
-    position:absolute;
-    right:60%;
-    bottom:65%;
+    position:relative;
+    left:.1em;
+    bottom:1.8em;
+
+    /* width:100%; */
+    align-self:flex-start;
+    /* min-width: auto; */
+    /* min-height:auto; */
+    order:-1;
+
 
 }
 
@@ -86,9 +120,11 @@
     padding:4%;
     top:1.5em;
     right:.4em;
-    width:53%;
+    max-width:53%;
     color:hsl(0, 0%, 98%);
     font-size:16.5px;
+   flex:3;
+
     
     
 
@@ -98,7 +134,11 @@
     position:absolute;
     left:65%;
     top:65%;
+    
     /* bottom:20%; */
+    /* align-self: flex-end; */
+    /* overflow: visible; */
+
 }
 
 
